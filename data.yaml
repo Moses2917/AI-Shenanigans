@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 12
+names: ['220 Volt', 'Bathroom Fan', 'Ceiling Fan', 'Ceiling Light', 'Duplex Outlet', 'GFCIOutlet', 'Smoke Detector', 'Switch', 'Wall Switched Outlet', 'WallLight', 'WaterProof GFCI', 'ress_can_light']
+
+roboflow:
+  workspace: movses-movsesyan-pnofn
+  project: elec-stuff
+  version: 18
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/movses-movsesyan-pnofn/elec-stuff/dataset/18

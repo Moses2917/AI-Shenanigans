@@ -1,0 +1,527 @@
+{'text': ' fact that most historians of Asian American studies will say that 1849 marks the beginning', 'timestamp': (0.0, 9.52)}
+{'text': ' of this early Asian American history and early Asian American immigration history.', 'timestamp': (9.52, 16.88)}
+{'text': " Um, Jeff, are you, so are you just like sharing your the slides currently right now because I don't know if it's just me but all I see is like a snippet of your of like the canvas.", 'timestamp': (16.88, 33.0)}
+{'text': ' Thank you.', 'timestamp': (33.0, 34.0)}
+{'text': " I'm not sure if I'm supposed to like re looking at something or not.", 'timestamp': (34.0, 39.0)}
+{'text': ' I just so appreciate you.', 'timestamp': (39.0, 40.6)}
+{'text': ' Yes, I thought I was sharing my whole PowerPoint, right?', 'timestamp': (40.6, 44.36)}
+{'text': " So I'm so glad you said something, right?", 'timestamp': (44.36, 47.0)}
+{'text': ' So boy, you know, it takes a lot of folks, right?', 'timestamp': (47.0, 50.0)}
+{'text': " To get the class going, especially when I can't see", 'timestamp': (50.0, 53.44)}
+{'text': " what you're seeing, if we're in a classroom,", 'timestamp': (53.44, 56.36)}
+{'text': ' then at least I', 'timestamp': (56.36, 64.44)}
+{'text': ' would be able to have the opportunity.', 'timestamp': (64.44, 66.48)}
+{'text': ' So how about now, Justin and everyone,', 'timestamp': (66.48, 69.72)}
+{'text': ' are you able to do that slide that', 'timestamp': (69.72, 71.64)}
+{'text': ' says background to immigration exclusion?', 'timestamp': (71.64, 74.52)}
+{'text': ' Oh, yes, we can see it now.', 'timestamp': (74.52, 75.52)}
+{'text': ' Thank you.', 'timestamp': (75.52, 76.36)}
+{'text': ' Thank you so much.', 'timestamp': (76.36, 77.56)}
+{'text': ' Thank you.', 'timestamp': (77.56, 78.08)}
+{'text': ' OK, thank you, Abby, as well for your yes,', 'timestamp': (78.08, 81.88)}
+{'text': ' and also,', 'timestamp': (81.88, 82.96000000000001)}
+{'text': ' Bavani, Bavani as well and other folks.', 'timestamp': (82.96000000000001, 86.08)}
+{'text': " I appreciate, I'm gonna hit clear all,", 'timestamp': (86.08, 88.12)}
+{'text': ' but I appreciate that you responded', 'timestamp': (88.12, 89.92)}
+{'text': " and I'm sure I'm gonna ask more questions.", 'timestamp': (89.92, 92.28)}
+{'text': " So yeah, I didn't click over,", 'timestamp': (92.28, 95.12)}
+{'text': ' so I thought, I thought you could see', 'timestamp': (95.12, 96.92)}
+{'text': ' what I was talking about,', 'timestamp': (96.92, 98.12)}
+{'text': " but you couldn't and thank the NIST for just in.", 'timestamp': (98.12, 100.84)}
+{'text': ' So folks, yeah, yeah, exactly.', 'timestamp': (100.84, 104.4)}
+{'text': " Yeah, I think, yeah, when I'm showing slides,", 'timestamp': (104.4, 107.24000000000001)}
+{'text': ' I think that you can see them.', 'timestamp': (107.24000000000001, 108.84)}
+{'text': " So if you can't, you have to tell me", 'timestamp': (108.84, 111.92)}
+{'text': " that is part of the student's responsibility, right?", 'timestamp': (111.92, 116.92)}
+{'text': ' And meeting us halfway here.', 'timestamp': (116.92, 119.12)}
+{'text': " So I was saying that we're talking about early Asian American history and early Asian American", 'timestamp': (119.12, 127.76)}
+{'text': " immigration history. So in giving this background to immigration exclusion, I'm going to talk", 'timestamp': (127.76, 134.8)}
+{'text': " about a couple of aspects of history which we have gone into in previous lectures. I'm just going", 'timestamp': (134.8, 144.8)}
+{'text': ' to touch a base on them because I want to kind of wrap things up and put things in writing to make sure I take the moment of clarifying that.', 'timestamp': (144.8, 152.0)}
+{'text': ' So this early time period of immigration from the United States, from Asia to the United States, with hand in hand with immigration exclusion. So what we see', 'timestamp': (152.0, 171.6)}
+{'text': ' is that that one million or so folks who made up those early immigrant demographics came from a variety of Asian countries and that during the late 19th century and the first 25', 'timestamp': (171.6, 194.8)}
+{'text': ' years of the 20th century, which is to say the 1900s, the United States passed immigration exclusion,', 'timestamp': (194.8, 204.06)}
+{'text': ' which impacted all of the countries', 'timestamp': (204.06, 207.6)}
+{'text': ' from which those early immigrants came.', 'timestamp': (207.6, 210.78)}
+{'text': " So let's take a look here at some of the background.", 'timestamp': (210.78, 215.78)}
+{'text': ' So for some of this background, I wanna take a step back,', 'timestamp': (215.78, 219.18)}
+{'text': ' as you know I like to do.', 'timestamp': (219.18, 221.58)}
+{'text': " We're gonna get back to the 1770s.", 'timestamp': (221.58, 224.26)}
+{'text': ' This comes from a different book by professor', 'timestamp': (224.26, 226.24)}
+{'text': " to cocky. This one's called In a Different Mirror. It's a history of multicultural America.", 'timestamp': (226.24, 232.08)}
+{'text': ' So this comes from Benjamin Franklin, right? One of the quote-unquote founding fathers of the', 'timestamp': (232.08, 238.96)}
+{'text': ' United States. And this is something that Benjamin Franklin said before the US revolution when he and other', 'timestamp': (238.96, 246.64000000000001)}
+{'text': ' founding fathers were thinking about what kind of country they were going to have. So I am now looking', 'timestamp': (246.64000000000001, 254.56)}
+{'text': ' whose name is not Yonamura to read this quote for us.', 'timestamp': (254.56, 261.56)}
+{'text': " That's right. I'm looking to folks to see you on here.", 'timestamp': (261.56, 266.56)}
+{'text': ' Okay, I see Isabelle has raised a hand in Jennifer has as well. Oh I love this is so good.', 'timestamp': (266.56, 289.04)}
+{'text': " Thank you so much folks. I see several hands. So I'm just going to take Isabel's hand right now", 'timestamp': (289.04, 295.2)}
+{'text': " and then I'm hoping that there'll be other stuff for the rest of you to read. So Isabel,", 'timestamp': (295.2, 300.16)}
+{'text': ' go for it. You get to be Benjamin Franklin for the next minute.', 'timestamp': (300.16, 305.3)}
+{'text': ' Great. Can you hear me? Yes, although your voice is a little bit soft.', 'timestamp': (305.3, 310.2)}
+{'text': ' Okay. Is this better? Yes. Perfect. And while we are scoring our planet by clearing', 'timestamp': (310.2, 317.3)}
+{'text': ' America of woods and so making this side of our globe reflect a brighter light to the', 'timestamp': (317.3, 323.0)}
+{'text': ' eyes of inhabitants and Mars or Venus.', 'timestamp': (323.0, 325.68)}
+{'text': ' Why should we be in the side of superior beings, darkened its people? Why increase the', 'timestamp': (325.68, 331.52)}
+{'text': ' sons of Africa by planting them in America, where we have so fair an opportunity,', 'timestamp': (331.52, 337.6)}
+{'text': ' by excluding all blacks and taunies of increasing the lovely white.', 'timestamp': (337.6, 344.0)}
+{'text': ' Thank you very much, Isabelle.', 'timestamp': (344.0, 345.26)}
+{'text': ' You have a really nice voice.', 'timestamp': (345.26, 347.7)}
+{'text': ' I see there are some hands, and I wanna hear from folks', 'timestamp': (347.7, 351.74)}
+{'text': ' what your impressions are of this quote.', 'timestamp': (351.74, 355.06)}
+{'text': ' What do you think it means?', 'timestamp': (355.06, 357.14)}
+{'text': ' What is he saying?', 'timestamp': (357.14, 358.74)}
+{'text': " What's the significance?", 'timestamp': (358.74, 360.06)}
+{'text': ' And also what questions do you have about it? Franklin, do you have', 'timestamp': (360.06, 369.12)}
+{'text': " a question or a comment about the quote? I'm trying to unmute you Franklin but I think you have", 'timestamp': (369.12, 377.04)}
+{'text': ' to do that on your end. Oh wait a minute, all the hands went away.', 'timestamp': (377.04, 382.6)}
+{'text': ' That used to be up there.', 'timestamp': (382.6, 384.40000000000003)}
+{'text': " Okay, folks, so I'm looking to you.", 'timestamp': (384.40000000000003, 387.2)}
+{'text': ' Questions, comments, thoughts about the quote.', 'timestamp': (387.2, 390.2)}
+{'text': ' I think we should have at least one question', 'timestamp': (390.2, 393.1)}
+{'text': ' and at least one comment.', 'timestamp': (393.1, 395.5)}
+{'text': ' Franklin has his hand up.', 'timestamp': (395.5, 397.0)}
+{'text': " I've unmuted Franklin, Franklin,", 'timestamp': (397.0, 399.1)}
+{'text': ' but you have to unmute on your end, I think.', 'timestamp': (399.1, 401.96000000000004)}
+{'text': ' I think.', 'timestamp': (401.96000000000004, 403.0)}
+{'text': ' Oh, wait, I put my hand up by accident though.', 'timestamp': (403.0, 406.08)}
+{'text': " Okay, that's okay Franklin, nice to meet you.", 'timestamp': (406.08, 409.52)}
+{'text': ' Yeah, look at that.', 'timestamp': (409.52, 411.0)}
+{'text': " Oh, there, that's you.", 'timestamp': (411.0, 412.64)}
+{'text': " Okay, we've been exchanging emails,", 'timestamp': (412.64, 415.08)}
+{'text': " but I'm so glad to do this.", 'timestamp': (415.08, 417.40000000000003)}
+{'text': ' And now I can put a name to a base.', 'timestamp': (417.40000000000003, 422.24)}
+{'text': ' Oh yeah, okay.', 'timestamp': (422.24, 423.6)}
+{'text': " So we'll talk about our emails later, Franklin,", 'timestamp': (423.6, 426.64)}
+{'text': ' and that we can also get into them', 'timestamp': (426.64, 428.8)}
+{'text': ' maybe an office hour in more depth.', 'timestamp': (428.8, 430.6)}
+{'text': ' So, hey Franklin, just go for it.', 'timestamp': (430.6, 433.92)}
+{'text': " Any questions, see, you don't have to understand it.", 'timestamp': (433.92, 436.52)}
+{'text': " That's fine if you don't.", 'timestamp': (436.52, 437.6)}
+{'text': " Any question, then we're gonna get to Batu and Regina.", 'timestamp': (437.6, 440.92)}
+{'text': " Comment, what's a keyword?", 'timestamp': (440.92, 442.72)}
+{'text': ' What words start to you as significant in that quote?', 'timestamp': (442.72, 445.24)}
+{'text': ' and Virginia.', 'timestamp': (445.24, 446.08)}
+{'text': " Comment, what's a keyword?", 'timestamp': (446.08, 447.88)}
+{'text': ' What words start to you as significant in that quote?', 'timestamp': (447.88, 450.40000000000003)}
+{'text': ' So last part of the quote seems like', 'timestamp': (450.40000000000003, 454.32)}
+{'text': " they're just interested in increasing", 'timestamp': (454.32, 456.6)}
+{'text': ' the population of the light.', 'timestamp': (456.6, 462.3)}
+{'text': ' I agree. I agree. Thank you very much Franklin.', 'timestamp': (462.3, 465.90000000000003)}
+{'text': ' Absolutely.', 'timestamp': (465.90000000000003, 466.90000000000003)}
+{'text': ' But to what is your', 'timestamp': (466.90000000000003, 469.2)}
+{'text': " question or comment, Batu, I'm trying to unmute you.", 'timestamp': (469.2, 472.2)}
+{'text': ' Here we go.', 'timestamp': (472.2, 472.90000000000003)}
+{'text': ' Can you hear me?', 'timestamp': (472.90000000000003, 473.5)}
+{'text': ' Yes, although your voice is quite soft.', 'timestamp': (473.5, 475.5)}
+{'text': ' Okay.', 'timestamp': (475.5, 476.0)}
+{'text': " I don't know if this is better or not.", 'timestamp': (476.0, 477.2)}
+{'text': ' I guess the comment I had was', 'timestamp': (477.2, 479.2)}
+{'text': ' Yes, although your voice is quite soft.', 'timestamp': (479.2, 482.2)}
+{'text': " Okay, I don't know if this is better or not.", 'timestamp': (482.2, 485.2)}
+{'text': ' I guess the comment I had was I think the beginning when it says we are scouring our planet by clearing America woods.', 'timestamp': (485.2, 493.2)}
+{'text': ' And so making this side of making this side of our globe reflect a brighter light to the eyes and pathogens.', 'timestamp': (493.2, 499.2)}
+{'text': ' I think to me that kind of reminds me of the idea of Manifest Estonia trying to push', 'timestamp': (499.2, 506.0)}
+{'text': ' towards the west of the more quote unquote unhabited parts from the eyes of the Europeans.', 'timestamp': (506.0, 514.0)}
+{'text': ' Absolutely. Absolutely. Thank you very much. And Regina, am I saying your name right, Regina? Or is it Regina?', 'timestamp': (514.0, 523.0)}
+{'text': " It's Regenade.", 'timestamp': (523.0, 524.72)}
+{'text': ' Oh, thank you.', 'timestamp': (524.72, 525.52)}
+{'text': " Regenade, I'm glad I asked Regenade.", 'timestamp': (525.52, 527.5600000000001)}
+{'text': ' Yeah.', 'timestamp': (527.5600000000001, 529.04)}
+{'text': ' I just was going to basically say what Freakman said,', 'timestamp': (529.04, 531.88)}
+{'text': " which it basically seems like he's trying to talk about making", 'timestamp': (531.88, 536.36)}
+{'text': ' the world just more wider, just having more white people', 'timestamp': (536.36, 540.12)}
+{'text': ' in America.', 'timestamp': (540.12, 541.96)}
+{'text': ' I just thought it was interesting when he said, why should we inside of superior', 'timestamp': (541.96, 545.84)}
+{'text': ' beings? The worst superior really stood out to me as this idea that white or superior than people', 'timestamp': (545.84, 551.76)}
+{'text': ' of color. Thank you. Thank you. Thank you. And thank you very much for pointing out that', 'timestamp': (551.76, 557.44)}
+{'text': ' really important word there. How about Justin T?', 'timestamp': (557.44, 566.32)}
+{'text': " Hi. For this quote, I really still got what's planting them in America because for me,", 'timestamp': (566.32, 575.04)}
+{'text': " I am Asian American, I haven't really understood my roots. I never really took the word root or like really like internalize that until now", 'timestamp': (575.04, 587.12)}
+{'text': " and I'm just and like being home in the quarantine has been like showing me like my roots I guess.", 'timestamp': (587.12, 592.8000000000001)}
+{'text': " I think that's like one thing that like being being in America has like really like I've taken", 'timestamp': (592.8000000000001, 599.2)}
+{'text': ' for granted for is like the roots such as like it and especially in the beginning', 'timestamp': (599.2, 606.0)}
+{'text': ' called like scouring our planet and by clearing American America woods. I guess that kind of just like', 'timestamp': (606.0, 612.88)}
+{'text': " shows how um how we can how America's trying like take away these roots but then there's others trying to instill theirs.", 'timestamp': (612.88, 624.88)}
+{'text': " That's quite profound. Thank you very much. Any other folks at this point have any other questions", 'timestamp': (624.88, 632.48)}
+{'text': " or comments? Anything you want clarification on or any other keyword you'd like to point out. Okay, so that was an excellent beginning to our Asian American history content", 'timestamp': (632.48, 649.32)}
+{'text': ' today that your classmates provided it. So we can think about this quote and even look', 'timestamp': (649.32, 655.0)}
+{'text': ' at the first few words there, right? While we, who is the we, right?', 'timestamp': (655.0, 663.92)}
+{'text': " From Franklin's perspective.", 'timestamp': (663.92, 666.16)}
+{'text': ' And while we are scouring our planet, scouring,', 'timestamp': (666.16, 670.44)}
+{'text': ' so that is the same verb I would use for,', 'timestamp': (670.44, 675.48)}
+{'text': " oh, I don't know, cleaning a pan", 'timestamp': (675.48, 677.72)}
+{'text': " that's had a lot of grease or oil on it, right?", 'timestamp': (677.72, 680.72)}
+{'text': ' Or you might say scouring the bathtub.', 'timestamp': (680.72, 683.72)}
+{'text': ' So this means cleaning our planet by clearing America', 'timestamp': (683.72, 688.72)}
+{'text': ' of wood.', 'timestamp': (688.72, 689.4)}
+{'text': ' So one of you mentioned the manifest destiny.', 'timestamp': (689.4, 692.36)}
+{'text': " And it's really this idea that Tukaki also introduced to us", 'timestamp': (692.36, 697.36)}
+{'text': ' that from the East Coast, European American perspective,', 'timestamp': (697.36, 702.36)}
+{'text': ' the rest of the continent was a', 'timestamp': (702.36, 706.04)}
+{'text': ' quote unquote wilderness that needed to be tamed. So this colonization from that', 'timestamp': (706.04, 714.5600000000001)}
+{'text': ' perspective was something which was positive, just like people might think', 'timestamp': (714.5600000000001, 718.48)}
+{'text': ' about cleaning something which is dirty as a positive action, but clearing the woods,', 'timestamp': (718.48, 725.6)}
+{'text': ' positive scouring or planet. And so making this side of our globe reflect a brighter light to the', 'timestamp': (725.6, 732.5600000000001)}
+{'text': " eyes of inhabitants in Mars or Venus. So I'm not aware that Benjamin Franklin actually thought he", 'timestamp': (732.5600000000001, 739.6800000000001)}
+{'text': ' was in communication with Martians or that he knew about living being.', 'timestamp': (739.6800000000001, 748.0)}
+{'text': " But what he's talking about is what does the world look like from a distance?", 'timestamp': (748.0, 754.0)}
+{'text': " Well, it's going to look brighter. It's going to look better as a result of the scouring which he and his society have done and were undertaking", 'timestamp': (754.0, 765.0)}
+{'text': ' and planning to undertake in North America.', 'timestamp': (765.0, 767.88)}
+{'text': ' So then he asks, why should we, we again, right?', 'timestamp': (767.88, 771.66)}
+{'text': ' In the sight of superior beings,', 'timestamp': (771.66, 774.2)}
+{'text': " and I think it's Regene pointed out", 'timestamp': (774.2, 775.9200000000001)}
+{'text': ' that superior beings darken its people.', 'timestamp': (775.9200000000001, 779.28)}
+{'text': " So why darken America when there's more,", 'timestamp': (779.28, 784.28)}
+{'text': " when there's superior people around, right?", 'timestamp': (784.28, 786.52)}
+{'text': ' Why increase the Africans by planning them?', 'timestamp': (786.52, 790.0)}
+{'text': ' Why give them roots in America?', 'timestamp': (790.0, 792.32)}
+{'text': ' Where we have so fair, so good an opportunity to exclude them', 'timestamp': (792.32, 797.32)}
+{'text': ' and exclude brown people, right?', 'timestamp': (797.32, 799.2)}
+{'text': ' Tony is brown and increasing the lovely white.', 'timestamp': (799.2, 804.52)}
+{'text': " So that's an important background", 'timestamp': (804.52, 806.6)}
+{'text': ' to Asian American history, right?', 'timestamp': (806.6, 808.8000000000001)}
+{'text': ' So we could even see before the United States', 'timestamp': (808.8000000000001, 811.5600000000001)}
+{'text': ' became a country, some of what its leaders had in mind.', 'timestamp': (811.5600000000001, 816.5600000000001)}
+{'text': ' Anybody want to say anything there, Regine?', 'timestamp': (816.5600000000001, 822.0)}
+{'text': ' You saw that Regine had a hand up.', 'timestamp': (822.0, 824.0)}
+{'text': ' Anybody else on this one before we move on?', 'timestamp': (824.0, 826.4)}
+{'text': " Okay, so let's take a look at some things that are having at the federal level, right?", 'timestamp': (826.4, 834.16)}
+{'text': " So let's start out with the 1790 Naturalization Law.", 'timestamp': (834.16, 847.0)}
+{'text': " I mentioned this law in lecture on Thursday, and we're talking about the three immigrants, whom the US government classified as Asian who took their cases to the Supreme Court and hey hold on a second, stop that.", 'timestamp': (847.0, 865.6)}
+{'text': " Sorry. Okay, well I guess I'll just leave it at that. I don't", 'timestamp': (865.6, 870.64)}
+{'text': " like it to look prettier. Why isn't it looking prettier? Right, hold on.", 'timestamp': (870.64, 874.48)}
+{'text': " Okay, so we're talking about them and I remember one of you asked how is it that", 'timestamp': (874.48, 880.48)}
+{'text': ' All right, hold on.', 'timestamp': (880.48, 881.6800000000001)}
+{'text': " Okay, so we're talking about them and I remember one of you asked,", 'timestamp': (881.6800000000001, 886.72)}
+{'text': " how is it that Mr. Ozzawa's wife, Mrs. Ozzawa was a U.S. citizen, okay?", 'timestamp': (886.72, 893.12)}
+{'text': " So we're talking then about naturalization law. So naturalization, I can just", 'timestamp': (893.12, 897.6)}
+{'text': ' review, naturalization is the legal process of becoming a US citizen if you do not have US citizenship.', 'timestamp': (897.6, 907.44)}
+{'text': ' So what we see with the 1790 naturalization law is that when this country was very young,', 'timestamp': (907.44, 917.9200000000001)}
+{'text': ' those founding fathers, the political leaders created a law about who is allowed to participate', 'timestamp': (917.9200000000001, 932.28)}
+{'text': ' in naturalization amongst those people who are immigrants, which of them would be allowed', 'timestamp': (932.28, 939.36)}
+{'text': ' to go through the legal process of becoming a US citizen.', 'timestamp': (939.36, 943.96)}
+{'text': ' So in according to this naturalization law,', 'timestamp': (943.96, 947.98)}
+{'text': ' only white folks could become US citizens.', 'timestamp': (947.98, 952.98)}
+{'text': " So that's some of the background.", 'timestamp': (952.98, 954.94)}
+{'text': ' And then we also talked about Thursday,', 'timestamp': (954.94, 958.34)}
+{'text': " but I didn't put it up for you at writing.", 'timestamp': (958.34, 959.86)}
+{'text': ' I just feel better if I do.', 'timestamp': (959.86, 964.0)}
+{'text': ' The constitutional amendments, which', 'timestamp': (964.0, 966.48)}
+{'text': ' took place after the Civil War, right?', 'timestamp': (966.48, 970.08)}
+{'text': ' So we have after the Civil War constitutional amendments,', 'timestamp': (970.08, 973.76)}
+{'text': ' which abolished slavery and which provided citizenship', 'timestamp': (973.76, 980.84)}
+{'text': ' for people who had been born in Africa and enslaved in the United States.', 'timestamp': (980.84, 984.0400000000001)}
+{'text': ' And also, amendment which has to do with the that everybody regardless of national origin should be treated fairly under the law.', 'timestamp': (984.0400000000001, 997.0400000000001)}
+{'text': ' And also that everyone should have the right to vote', 'timestamp': (997.0400000000001, 1003.76)}
+{'text': ' regardless of race, not regardless of gender, right?', 'timestamp': (1003.76, 1007.24)}
+{'text': ' Regardless of race.', 'timestamp': (1007.24, 1008.5600000000001)}
+{'text': ' So what we see after the Civil War is that', 'timestamp': (1008.5600000000001, 1012.0400000000001)}
+{'text': ' the naturalization law gets expanded', 'timestamp': (1012.0400000000001, 1015.9200000000001)}
+{'text': ' to include Africans.', 'timestamp': (1015.9200000000001, 1018.0)}
+{'text': ' So those folks who are born in Africa', 'timestamp': (1018.0, 1019.84)}
+{'text': ' and enslaved in the United States,', 'timestamp': (1019.84, 1023.0)}
+{'text': ' were given our graded US citizenship', 'timestamp': (1023.0, 1026.2)}
+{'text': ' with this post-civil war, constitutional amendments.', 'timestamp': (1026.2, 1029.68)}
+{'text': ' So where did that leave Asian?', 'timestamp': (1029.68, 1032.16)}
+{'text': ' So at this point had around a 20 year history', 'timestamp': (1032.16, 1037.16)}
+{'text': ' in the United States.', 'timestamp': (1037.16, 1038.76)}
+{'text': ' Well, that left Asian immigrants remaining in a category, which was first identified in the', 'timestamp': (1038.76, 1043.76)}
+{'text': ' 1790 Naturalization Law. They remain in the category of, quote, aliens ineligible for citizenship,', 'timestamp': (1043.76, 1051.44)}
+{'text': ' right? Aliens having nothing to do with Benjamin Franklin talking to the folks on Mars, but a legal term or legal use term used to refer to immigrants.', 'timestamp': (1051.44, 1069.52)}
+{'text': ' So there were aliens who were eligible for citizenship and aliens who were ineligible.', 'timestamp': (1069.52, 1074.8)}
+{'text': ' And those were Asians. Any questions about any of that?', 'timestamp': (1074.8, 1082.44)}
+{'text': ' So again, going back to one of my favorite songs,', 'timestamp': (1082.44, 1086.72)}
+{'text': " there's a phrase, nothing comes from nothing, right?", 'timestamp': (1086.72, 1090.16)}
+{'text': ' So when we get all these immigration exclusion laws,', 'timestamp': (1090.16, 1092.6200000000001)}
+{'text': ' we wanna keep in mind all of this background.', 'timestamp': (1092.6200000000001, 1096.1200000000001)}
+{'text': ' Nothing comes from nothing.', 'timestamp': (1096.1200000000001, 1097.74)}
+{'text': ' Maybe some of you in the national sciences have other perspectives.', 'timestamp': (1097.74, 1099.26)}
+{'text': " That's just a song, but it's a nice way of remembering what's going on here.", 'timestamp': (1099.26, 1103.14)}
+{'text': " So let's take a look at a state level.", 'timestamp': (1103.14, 1105.26)}
+{'text': " Let's pay attention to the state of California and it's 1880 anti-missedination law.", 'timestamp': (1105.26, 1111.42)}
+{'text': ' This is the anti-missedination law of the state of California.', 'timestamp': (1111.42, 1116.26)}
+{'text': ' So it was really different', 'timestamp': (1116.26, 1123.3600000000001)}
+{'text': ' from anti-missedination laws in other parts of the country.', 'timestamp': (1123.3600000000001, 1127.02)}
+{'text': ' So if you recall on Thursday,', 'timestamp': (1127.02, 1128.76)}
+{'text': " we looked at colonial Virginia's first anti-missedination law", 'timestamp': (1128.76, 1133.52)}
+{'text': ' and the fact that the state of Virginia inherited that law.', 'timestamp': (1133.52, 1137.16)}
+{'text': ' So that when Virginia became a state,', 'timestamp': (1137.16, 1139.48)}
+{'text': ' it had anti-missedination laws.', 'timestamp': (1139.48, 1141.32)}
+{'text': ' And those laws stayed on the books of the state of Virginia', 'timestamp': (1141.32, 1143.88)}
+{'text': ' until 1967, right?', 'timestamp': (1143.88, 1146.44)}
+{'text': ' When Virginia was the last state', 'timestamp': (1146.44, 1148.24)}
+{'text': ' to get rid of anti-missedination laws.', 'timestamp': (1148.24, 1150.84)}
+{'text': ' Now, if you take a look at the Virginia anti-missedination', 'timestamp': (1150.84, 1154.88)}
+{'text': ' law, it made it illegal for whites and blacks to marry,', 'timestamp': (1154.88, 1160.52)}
+{'text': ' OK?', 'timestamp': (1160.52, 1161.48)}
+{'text': ' Whites and blacks, two racial terms which were codified or put into law. But California', 'timestamp': (1161.48, 1168.48)}
+{'text': ' was really different. California created a law, the leaders of California created a law', 'timestamp': (1168.48, 1177.68)}
+{'text': ' which made it illegal for whites to marry non whites,', 'timestamp': (1177.68, 1183.48)}
+{'text': ' or for non whites to marry whites.', 'timestamp': (1183.48, 1185.76)}
+{'text': " So it's different, right?", 'timestamp': (1185.76, 1187.72)}
+{'text': ' Instead of a black white law,', 'timestamp': (1187.72, 1189.84)}
+{'text': ' you have a white non white law.', 'timestamp': (1189.84, 1192.4)}
+{'text': ' So one of the things that we talked about last time', 'timestamp': (1192.4, 1194.8)}
+{'text': ' is from its earliest statehood, California,', 'timestamp': (1194.8, 1197.8)}
+{'text': ' was already a multicultural or you met', 'timestamp': (1197.8, 1200.2)}
+{'text': ' say multiracial society, right? With European Americans and the Mexican elite and the Chinese', 'timestamp': (1200.2, 1202.56)}
+{'text': ' and African Americans and also Native Californians and that was recognized in this law which was not', 'timestamp': (1202.56, 1212.08)}
+{'text': ' concerned with preventing the likes of me for example right I have African American parent', 'timestamp': (1212.08, 1222.9)}
+{'text': ' and Asian American parent, Japanese American parent.', 'timestamp': (1222.9, 1226.6000000000001)}
+{'text': ' No, because they are both non-whites, right?', 'timestamp': (1226.6000000000001, 1229.54)}
+{'text': ' And they would have been legally non-whites, right?', 'timestamp': (1229.54, 1231.94)}
+{'text': ' And if they were alive in 1880.', 'timestamp': (1231.94, 1233.74)}
+{'text': ' So no one was concerned amongst the leadership', 'timestamp': (1233.74, 1235.9)}
+{'text': ' in California with them marrying each other, right?', 'timestamp': (1235.9, 1238.64)}
+{'text': ' It was about protecting this category of whiteness.', 'timestamp': (1238.64, 1243.0)}
+{'text': ' Any questions or any thoughts about that?', 'timestamp': (1243.0, 1247.0)}
+{'text': " Okay, so I'm just using this now to clarify for you some of the terms that we've", 'timestamp': (1247.0, 1253.0)}
+{'text': ' went over last time, but also to provide some of the background to us moving forward.', 'timestamp': (1253.0, 1265.0)}
+{'text': ' Any questions or comments?', 'timestamp': (1265.0, 1267.76)}
+{'text': " Okay, so we're going to then move on and we're going to get into some Chinese specific", 'timestamp': (1267.76, 1274.68)}
+{'text': " history. Before we do that, I want to take some time as to why we're focusing on the Chinese in particular. Okay, so what's important to remember is that", 'timestamp': (1274.68, 1289.84)}
+{'text': ' Chinese were the first group of Asians to live in the spotlight of American popular', 'timestamp': (1289.84, 1316.88)}
+{'text': " imagination as well as in the minds of powerful people who were, let's say, the capitalist, the employers, the lawmakers.", 'timestamp': (1316.88, 1329.0)}
+{'text': ' So Chinese significance really should not be underestimated.', 'timestamp': (1329.0, 1337.0)}
+{'text': ' And we can learn a lot about the experiences of later Asian immigrants and a later Asian American groups', 'timestamp': (1337.0, 1346.8)}
+{'text': ' by looking at the Chinese history.', 'timestamp': (1346.8, 1350.16)}
+{'text': " Plus, it's also just so interesting that Chinese", 'timestamp': (1350.16, 1353.1200000000001)}
+{'text': ' early history and it gets us into the history of California', 'timestamp': (1353.1200000000001, 1356.04)}
+{'text': ' and when so many things were established in the state.', 'timestamp': (1356.04, 1359.32)}
+{'text': ' So 1849 is the gold rush. Do people,', 'timestamp': (1359.32, 1363.84)}
+{'text': ' does anybody have any convenient ways of helping them,', 'timestamp': (1363.84, 1366.72)}
+{'text': ' helping you remember the year of the gold rush? Like,', 'timestamp': (1366.72, 1370.56)}
+{'text': ' like I said last time, 1492 Columbus sale, the ocean blue,', 'timestamp': (1370.56, 1374.8)}
+{'text': ' anything like that? Yeah, I saw a hand up there.', 'timestamp': (1374.8, 1378.4)}
+{'text': ' Um Angela. Um can you guys hear me okay?', 'timestamp': (1378.4, 1384.0)}
+{'text': ' Yes although your voice is soft.', 'timestamp': (1384.0, 1386.0)}
+{'text': " Okay well if anyone's from California or the Bay Area you could think of the 49ers.", 'timestamp': (1386.0, 1392.0)}
+{'text': ' Absolutely.', 'timestamp': (1392.0, 1394.0)}
+{'text': ' Absolutely.', 'timestamp': (1394.0, 1396.0)}
+{'text': ' So how many of you have not made that connection before an Angela just helped you out?', 'timestamp': (1396.0, 1401.0)}
+{'text': ' Go ahead and put a green yes.', 'timestamp': (1401.0, 1404.0)}
+{'text': ' If Angela just helped you out there by making that connection.', 'timestamp': (1404.0, 1408.0)}
+{'text': ' Okay, well, I guess you all thought of it.', 'timestamp': (1408.0, 1410.0)}
+{'text': ' Nope, some folks did.', 'timestamp': (1410.0, 1412.0)}
+{'text': " And I know there's more who just made that connection now", 'timestamp': (1412.0, 1414.0)}
+{'text': ' because you kind of go up, especially if you are from California,', 'timestamp': (1414.0, 1417.0)}
+{'text': " you're just, you see hearing about the 49ers.", 'timestamp': (1417.0, 1419.0)}
+{'text': " You don't necessarily make that connection in your mind.", 'timestamp': (1419.0, 1423.0)}
+{'text': " It's just kind of there, right?", 'timestamp': (1423.0, 1424.0)}
+{'text': " Okay, so I'm going to go ahead and clear all. So I'm going back to our canvas here and I'm opening up the,", 'timestamp': (1424.0, 1431.0)}
+{'text': " well, I'm going to open up actually on my desktop, the lecture on Chinese labor in 19th century California.", 'timestamp': (1431.0, 1441.0)}
+{'text': " That's what I think at least. That's what I think I'm going to do. Okay, so I have done that successfully, but have I successfully done a screen share? I have not.", 'timestamp': (1441.0, 1456.0)}
+{'text': ' have successfully screen shared that first slide on Chinese labor in 19th century California.', 'timestamp': (1456.0, 1465.68)}
+{'text': " It's not pretty that says click to add a subtitle. It's not pretty at all. Okay, so let's talk a bit", 'timestamp': (1465.68, 1472.0)}
+{'text': ' about the types of work that Chinese folks did. Okay, we talked about mining last time,', 'timestamp': (1472.0, 1483.88)}
+{'text': " but we're gonna talk about giving", 'timestamp': (1483.88, 1486.0)}
+{'text': ' into some more sectors of employment,', 'timestamp': (1486.0, 1489.14)}
+{'text': ' railroads, agriculture, laundry,', 'timestamp': (1489.14, 1492.6000000000001)}
+{'text': ' Chinese men because the vast majority', 'timestamp': (1492.6000000000001, 1494.92)}
+{'text': ' of these immigrants were men also did a lot', 'timestamp': (1494.92, 1498.44)}
+{'text': ' of restaurant work cooking and also domestic cooking and domestic work. I have to smile. Okay. I mentioned to you', 'timestamp': (1498.44, 1510.64)}
+{'text': " that my dad, he's passed away. He was a Japanese American, right? My mom is African American.", 'timestamp': (1510.64, 1517.1200000000001)}
+{'text': ' So my parents lived here in Sacramento just around two miles from where I live now. And there was somebody', 'timestamp': (1517.1200000000001, 1525.84)}
+{'text': ' who came and worked on the house. I think that when they bought the house there was something', 'timestamp': (1525.84, 1534.8)}
+{'text': ' about it that had to be fixed. So the developer sent in a particular crew of I think two men to come and work on the house.', 'timestamp': (1534.8, 1543.24)}
+{'text': ' And when they came in, my dad was there.', 'timestamp': (1543.24, 1546.6000000000001)}
+{'text': " And no, no, no, no, no, that's not the true story.", 'timestamp': (1546.6000000000001, 1549.8400000000001)}
+{'text': ' Okay, when they came in, my mom was there, right?', 'timestamp': (1549.8400000000001, 1552.16)}
+{'text': " She's African American.", 'timestamp': (1552.16, 1553.44)}
+{'text': ' So okay, whatever they come in, they fix it.', 'timestamp': (1553.44, 1555.76)}
+{'text': ' Well, something comes up again a couple of years later and the same crew of people came,', 'timestamp': (1555.76, 1563.4)}
+{'text': ' two men.', 'timestamp': (1563.4, 1564.88)}
+{'text': ' And at this point, my mom was not home.', 'timestamp': (1564.88, 1567.92)}
+{'text': ' My dad was home.', 'timestamp': (1567.92, 1569.08)}
+{'text': ' And my dad happened to be in the kitchen', 'timestamp': (1569.08, 1571.16)}
+{'text': ' where he did spend a lot of time.', 'timestamp': (1571.16, 1573.64)}
+{'text': ' And he happened to be washing dishes.', 'timestamp': (1573.64, 1577.48)}
+{'text': ' And this small crew of workers asked my dad if he was the cook.', 'timestamp': (1577.48, 1584.24)}
+{'text': " Anyway, I just think that's so funny.", 'timestamp': (1584.24, 1585.8400000000001)}
+{'text': ' So they asked him, which of course I guess he was in the sense both parents are cooks and', 'timestamp': (1585.8400000000001, 1590.0)}
+{'text': ' most parents are cooks, right? But again, this is kind of harkening back to an American', 'timestamp': (1590.0, 1596.64)}
+{'text': " imagination. I don't even remember the race of these men.", 'timestamp': (1596.64, 1602.0)}
+{'text': " And I actually don't necessarily think that they were white,", 'timestamp': (1602.0, 1607.0)}
+{'text': " but I don't recall.", 'timestamp': (1607.0, 1609.48)}
+{'text': " But again, there's this both popular representation,", 'timestamp': (1609.48, 1615.6000000000001)}
+{'text': ' as well as the actual history of Asian men', 'timestamp': (1615.6000000000001, 1620.52)}
+{'text': ' working into a domestic service, including cooking.', 'timestamp': (1620.52, 1624.24)}
+{'text': " So if you didn't see my dad with his", 'timestamp': (1624.24, 1626.16)}
+{'text': " East Asian phenotype, you may have thought he was Chinese and that I guess, you know, he's", 'timestamp': (1626.16, 1631.2)}
+{'text': ' working for the black lady in Sacramento suburbs. So anyway, that just illustrates the prevalence', 'timestamp': (1631.2, 1637.76)}
+{'text': ' of that image within the industry. But I also just tell you that anecdote to get your attention.', 'timestamp': (1637.76, 1644.92)}
+{'text': " So let's talk a little bit about why.", 'timestamp': (1644.92, 1648.48)}
+{'text': ' Why were Chinese men doing this type of work?', 'timestamp': (1648.48, 1654.68)}
+{'text': ' Anybody have any thoughts about that?', 'timestamp': (1654.68, 1656.8)}
+{'text': ' Maybe any hypotheses about why they were doing these particular types of work. So anyone, anyone, anyone, anyone? Anyone,', 'timestamp': (1656.8, 1668.64)}
+{'text': ' bin to China? I have. Yeah. Other folks, I think we maybe have some people who are in China right', 'timestamp': (1668.64, 1679.1200000000001)}
+{'text': ' now and who are in this class, right?', 'timestamp': (1679.1200000000001, 1683.04)}
+{'text': ' So I was in China.', 'timestamp': (1683.04, 1684.16)}
+{'text': ' I co-directed a study abroad to China and Vietnam.', 'timestamp': (1684.16, 1689.72)}
+{'text': ' So most of our time was actually in China,', 'timestamp': (1689.72, 1692.08)}
+{'text': ' and then we were in Vietnam for around five weeks.', 'timestamp': (1692.08, 1695.88)}
+{'text': " So if you got it, China, you're going to find the people", 'timestamp': (1695.88, 1699.56)}
+{'text': ' who are working in almost all of the sectors of employment, our Chinese. Chinese provide most of the labor', 'timestamp': (1699.56, 1714.0)}
+{'text': " in China. If you're looking at the work that is poorly paid, that's very exploitative in your in China.", 'timestamp': (1714.0, 1723.5)}
+{'text': ' Most people who are doing it are Chinese.', 'timestamp': (1723.5, 1725.5)}
+{'text': " And if you're looking at the elite in China, most of them are Chinese.", 'timestamp': (1725.5, 1733.5)}
+{'text': ' What do you think about that?', 'timestamp': (1733.5, 1739.0)}
+{'text': ' That may be obvious, right?', 'timestamp': (1739.0, 1744.0)}
+{'text': ' Okay.', 'timestamp': (1744.0, 1744.9)}
+{'text': ' So the thing is then,', 'timestamp': (1744.9, 1746.6000000000001)}
+{'text': ' why is it in 19th century California,', 'timestamp': (1746.6000000000001, 1750.88)}
+{'text': ' Chinese were overrepresented in certain sectors of employment.', 'timestamp': (1750.88, 1755.44)}
+{'text': ' But if you go to a Chinese place like mainland China,', 'timestamp': (1755.44, 1759.32)}
+{'text': ' right, other Chinese parts of the world,', 'timestamp': (1759.32, 1761.96)}
+{'text': " you're gonna see Chinese folks in both the high level and the low level, right?", 'timestamp': (1761.96, 1767.6000000000001)}
+{'text': ' Of the of the labor market, okay? So when you see a group of people who are overrepresented, a racial or ethnic group who are overrepresented in a particular type of work. That tells you probably nothing about those people,', 'timestamp': (1767.6000000000001, 1790.56)}
+{'text': " but it can provide you some very rich and helpful information about the society that they're in.", 'timestamp': (1790.56, 1798.32)}
+{'text': ' When I say it tells you probably nothing, of course you can learn about their lives,', 'timestamp': (1798.32, 1803.56)}
+{'text': " but it doesn't say anything about their inherent abilities.", 'timestamp': (1803.56, 1808.56)}
+{'text': ' Why do we have so many Vietnamese in California', 'timestamp': (1808.56, 1811.1200000000001)}
+{'text': ' working in nails?', 'timestamp': (1811.1200000000001, 1812.56)}
+{'text': ' Do Vietnamese people really like to do especially nails?', 'timestamp': (1812.56, 1815.3600000000001)}
+{'text': ' No, you go to Vietnam, right?', 'timestamp': (1815.3600000000001, 1817.44)}
+{'text': ' Like when I was in Hanh Hoi,', 'timestamp': (1817.44, 1819.08)}
+{'text': ' who are most of the teachers, they are Vietnamese,', 'timestamp': (1819.08, 1824.64)}
+{'text': ' you know, motorcycle taxi drivers, Vietnamese,', 'timestamp': (1824.64, 1828.28)}
+{'text': ' manicures, Vietnamese, wealthy business people,', 'timestamp': (1828.28, 1831.28)}
+{'text': ' Vietnamese, right?', 'timestamp': (1831.28, 1832.28)}
+{'text': " They're in every sector.", 'timestamp': (1832.28, 1833.6000000000001)}
+{'text': ' But why in California are Vietnamese', 'timestamp': (1833.6000000000001, 1835.68)}
+{'text': ' overrepresented in a certain sector?', 'timestamp': (1835.68, 1837.76)}
+{'text': ' So why my Chinese have been overrepresented', 'timestamp': (1837.76, 1841.04)}
+{'text': ' in these particular aspects of the economy.', 'timestamp': (1841.04, 1843.52)}
+{'text': " That's the kind of question that we want to ask", 'timestamp': (1843.52, 1846.0)}
+{'text': ' and that we also want to ask all the time', 'timestamp': (1846.0, 1850.08)}
+{'text': ' when we see an overrepresentation,', 'timestamp': (1850.08, 1852.72)}
+{'text': " whether that's historically or today.", 'timestamp': (1852.72, 1855.24)}
+{'text': ' So there are a couple of reasons why.', 'timestamp': (1855.24, 1859.16)}
+{'text': " Actually, I'm going to skip ahead.", 'timestamp': (1859.16, 1861.56)}
+{'text': " There are a couple of reasons why I feel like I'm missing my slide here.", 'timestamp': (1861.56, 1875.2)}
+{'text': " I just can't see it.", 'timestamp': (1875.2, 1876.16)}
+{'text': " Okay, sorry, I don't wanna make you dizzy by doing this.", 'timestamp': (1876.16, 1878.96)}
+{'text': ' Okay, so there are a couple of reasons why.', 'timestamp': (1878.96, 1881.08)}
+{'text': ' There were particular means or methods', 'timestamp': (1881.08, 1884.88)}
+{'text': ' for confining Chinese and other Asians', 'timestamp': (1884.88, 1888.3600000000001)}
+{'text': ' and other people who were considered inferior', 'timestamp': (1888.3600000000001, 1891.88)}
+{'text': ' to low status work.', 'timestamp': (1891.88, 1906.0)}
+{'text': ' So one of the means of doing that was discriminatory legislation in taxes.', 'timestamp': (1906.0, 1915.0)}
+{'text': ' So 1850 is when you had the first foreign miners tax.', 'timestamp': (1915.0, 1920.0)}
+{'text': " I'm fixing my slide there.", 'timestamp': (1920.0, 1923.0)}
+{'text': ' Foreign miners tax and there was another one in 1852. So what this did was actually', 'timestamp': (1923.0, 1930.78)}
+{'text': ' harass people out of the mines and also', 'timestamp': (1930.78, 1934.26)}
+{'text': ' legitimized a', 'timestamp': (1934.26, 1936.26)}
+{'text': ' lot of the', 'timestamp': (1936.26, 1937.76)}
+{'text': ' Anti-Chinese miners sentiment remember the Chinese who were mining,', 'timestamp': (1937.76, 1943.6000000000001)}
+{'text': ' a lot of them had experience', 'timestamp': (1943.6000000000001, 1945.48)}
+{'text': ' because they had a history of mining for precious metals', 'timestamp': (1945.48, 1950.48)}
+{'text': ' and moving abroad to do that,', 'timestamp': (1950.48, 1952.88)}
+{'text': ' but their experience was not appreciated', 'timestamp': (1952.88, 1957.0)}
+{'text': ' by people who resented their success', 'timestamp': (1957.0, 1960.16)}
+{'text': ' and also by people who were racist', 'timestamp': (1960.16, 1963.76)}
+{'text': ' and are resented their success.', 'timestamp': (1963.76, 1967.04)}
+{'text': ' Another reason why Chinese and other Asians and other people of color work', 'timestamp': (1967.04, 1974.64)}
+{'text': ' confined to low status work is that they were kept out of unionized jobs.', 'timestamp': (1974.64, 1980.4)}
+{'text': ' So if we think about this time period,', 'timestamp': (1980.4, 1982.72)}
+{'text': ' this is a really important time period for the industrialization of the United States.', 'timestamp': (1982.72, 1988.0)}
+{'text': ' By the time you get to the Civil War, a lot of the Northeast of the United States is industrialized and California became connected to the East Coast very early in its stay hood', 'timestamp': (1988.0, 2005.0)}
+{'text': ' with the Transcontinental Railroad.', 'timestamp': (2005.0, 2007.0)}
+{'text': ' So the job that most people were able to do,', 'timestamp': (2007.0, 2010.0)}
+{'text': ' which gave them an alternative from their historical', 'timestamp': (2010.0, 2013.0)}
+{'text': " rule lives, even if they couldn't read or write", 'timestamp': (2013.0, 2017.0)}
+{'text': " or they didn't have a particular education,", 'timestamp': (2017.0, 2020.0)}
+{'text': ' was to participate in factory work', 'timestamp': (2020.0, 2025.0)}
+{'text': ' or to learn a trade, right?', 'timestamp': (2025.0, 2030.0)}
+{'text': ' Which of course, some would have required some education, but not necessarily literacy.', 'timestamp': (2030.0, 2035.0)}
+{'text': ' But what you had is both the boycotts and the barring of people of color from the union.', 'timestamp': (2035.0, 2041.0)}
+{'text': ' So for example, in San Francisco, Chinese actually started a shoe manufacturing.', 'timestamp': (2041.0, 2048.88)}
+{'text': ' But then there was an anti-Chinese shoe manufacturing boycott. And when I say anti-Chinese, really', 'timestamp': (2048.88, 2055.68)}
+{'text': " it's anti-Chinese American because these are shoes that were being made in San Francisco.", 'timestamp': (2055.68, 2061.28)}
+{'text': ' So does anybody have any questions about any of that?', 'timestamp': (2061.28, 2064.0)}
+{'text': " Okay. So this is in here but this is all review. Okay, I'm going to skip to this laundry work.", 'timestamp': (2064.0, 2075.68)}
+{'text': ' Okay. So take a look at this quote, the Longi Man, the Chinese Longi Man.', 'timestamp': (2075.68, 2085.0)}
+{'text': ' Just like the Chinese cook, if you want to see an example of the Chinese cook in popular culture, you can watch.', 'timestamp': (2085.0, 2092.0)}
+{'text': ' Is it called gun smoke? Are you still watch that a lot in like the 2010s?', 'timestamp': (2092.0, 2099.0)}
+{'text': ' But it comes out from the 60s. Anyway, hop sing, hop sing was his name, right? He was the Chinese cook character on the', 'timestamp': (2099.0, 2106.16)}
+{'text': " Nevada ranch. There's also the Longhue man, uh, uh, uh, character and character in popular", 'timestamp': (2106.16, 2113.68)}
+{'text': ' culture. So what you found is that some Chinese were able to become entrepreneurs in Longhue,', 'timestamp': (2113.68, 2121.68)}
+{'text': ' and that also that led to this laundry man', 'timestamp': (2121.68, 2126.4)}
+{'text': ' stereotype but we want to ask why were people overrepresented in a particular', 'timestamp': (2126.4, 2131.44)}
+{'text': ' niche at this time in China and in the United States men did very little laundry', 'timestamp': (2131.44, 2138.68)}
+{'text': ' right even today in both countries women do more laundry than men.', 'timestamp': (2138.68, 2145.0)}
+{'text': ' Men did very little laundry, but Chinese men did laundry', 'timestamp': (2145.0, 2150.0)}
+{'text': ' and they were very active in that sector of employment in California.', 'timestamp': (2150.0, 2155.0)}
+{'text': " And that's because they found an opportunity and they were able to exploit that opportunity in the society that they were in because it was", 'timestamp': (2155.0, 2168.14)}
+{'text': ' considered an appropriate type of work for people who were considered inferior.', 'timestamp': (2168.14, 2175.84)}
+{'text': ' So it was considered appropriate to their status within that social hierarchy in early California.', 'timestamp': (2175.84, 2184.56)}
+{'text': ' Also in early California, there were very few women', 'timestamp': (2184.56, 2188.84)}
+{'text': ' of any race or ethnicity.', 'timestamp': (2188.84, 2192.8)}
+{'text': ' Yet you had a smaller population of younger married couples,', 'timestamp': (2192.8, 2199.32)}
+{'text': ' which we might call, yeah, peace today, right?', 'timestamp': (2199.32, 2203.64)}
+{'text': ' Where they had money, but they were very busy working,', 'timestamp': (2203.64, 2207.04)}
+{'text': ' so they would get their laundry done for them professionally.', 'timestamp': (2207.04, 2210.96)}
+{'text': ' And then there are also single people who lived in roomie', 'timestamp': (2210.96, 2214.32)}
+{'text': " houses, and they didn't have room to do their laundry,", 'timestamp': (2214.32, 2217.64)}
+{'text': ' because they would literally rent a room in a house.', 'timestamp': (2217.64, 2219.96)}
+{'text': ' So they also contributed to the clientele.', 'timestamp': (2219.96, 2224.4)}
+{'text': ' So if we look back to this sector,', 'timestamp': (2224.4, 2227.52)}
+{'text': ' we can see that there were multiple reasons', 'timestamp': (2227.52, 2231.96)}
+{'text': ' why Chinese actually were able to exploit this niche,', 'timestamp': (2231.96, 2236.8)}
+{'text': ' not to mention their hard work.', 'timestamp': (2236.8, 2241.2000000000003)}
+{'text': ' This was very difficult work,', 'timestamp': (2241.2000000000003, 2242.48)}
+{'text': ' but also the demographics of the early', 'timestamp': (2242.48, 2244.8)}
+{'text': ' California population. It also provided people with opportunities to explore,', 'timestamp': (2244.8, 2251.68)}
+{'text': ' become adventurous, they could be pioneers amongst the Chinese American', 'timestamp': (2251.68, 2255.96)}
+{'text': " population by moving further east into let's say Wyoming in the mountain states. So as early as 1851, you had that first Chinese", 'timestamp': (2255.96, 2269.28)}
+{'text': ' laundry which was established in San Francisco, but by 1880 you had 5,000 of them.', 'timestamp': (2269.28, 2276.4)}
+{'text': " Okay, I'm going to pause there if not stop there, but I want to see what questions or comments or thoughts that you have.", 'timestamp': (2276.4, 2287.52)}
+{'text': " And also, I think there's a generational question. How many of you have heard of this stereotype about a Chinese laundry man or Chinese cook before today?", 'timestamp': (2287.52, 2298.8)}
+{'text': " Please just go ahead and hit yes if you've already heard.", 'timestamp': (2298.8, 2302.44)}
+{'text': ' Okay, Brian has, Tracy has, Amy has.', 'timestamp': (2302.44, 2305.76)}
+{'text': ' I would love that if you could share where, right?', 'timestamp': (2305.76, 2309.44)}
+{'text': ' Do you recall where you saw that representation', 'timestamp': (2309.44, 2313.96)}
+{'text': ' or where you heard about that stereotype', 'timestamp': (2313.96, 2317.8)}
+{'text': ' or that history?', 'timestamp': (2317.8, 2319.66)}
+{'text': ' If so, please raise a blue hand', 'timestamp': (2319.66, 2321.78)}
+{'text': ' because we see a couple of yeses and a couple of', 'timestamp': (2321.78, 2324.5)}
+{'text': ' noes but go ahead and raise a blue hand. Do you recall where you learned about that?', 'timestamp': (2324.5, 2331.0)}
+{'text': ' Okay, so we see that Shannon has a hand up.', 'timestamp': (2331.0, 2337.0)}
+{'text': ' Shannon.', 'timestamp': (2337.0, 2339.0)}
+{'text': ' Yes, so I think I first saw the stereotype when I was a kid watching cartoons, so I would say I saw it', 'timestamp': (2339.0, 2346.48)}
+{'text': " through pop culture mainly. Oh okay, okay, okay, thank you very much, Shannon. Oh okay, I didn't even,", 'timestamp': (2346.48, 2353.44)}
+{'text': " you know, it's been a long time since I watched cartoons. But thank you very much for pointing that out.", 'timestamp': (2353.44, 2359.68)}
+{'text': ' Other folks? So let me tell you about something which was on TV a lot in the 1980s,', 'timestamp': (2359.68, 2369.2400000000002)}
+{'text': ' getting into the 1990s. It was a commercial for laundry soap. Okay. And in this', 'timestamp': (2369.2400000000002, 2378.32)}
+{'text': ' commercial there is a white homemaker, right?', 'timestamp': (2378.32, 2383.36)}
+{'text': " That's how she's represented as a white homemaker.", 'timestamp': (2383.36, 2387.04)}
+{'text': ' And she is trying to do her own laundry,', 'timestamp': (2387.04, 2392.48)}
+{'text': " and she can't get it as clean as she likes to.", 'timestamp': (2392.48, 2394.88)}
+{'text': ' But when she takes her laundry, right,', 'timestamp': (2394.88, 2397.32)}
+{'text': ' to the Chinese laundry, it gets really clean.', 'timestamp': (2397.32, 2401.44)}
+{'text': ' And so she asks the Chinese guy at the laundry, how does he do it?', 'timestamp': (2401.44, 2405.0)}
+{'text': " And he says, it's an ancient Chinese secret maam.", 'timestamp': (2405.0, 2408.0)}
+{'text': ' That was like the click, the term, the phrase that really came out of that commercial that everyone remembered ancient Chinese secret maam.', 'timestamp': (2408.0, 2416.0)}
+{'text': " But of course, in the commercial is it's been revealed it's because he's using a particular brand of detergent. Okay. So this like", 'timestamp': (2416.0, 2427.68)}
+{'text': " Shannon's example, in my example, this really speaks to the prevalence of the stereotype.", 'timestamp': (2427.68, 2434.88)}
+{'text': ' So did Chinese men work in laundry? Yes. Even as recently as around the 2000s, when I was', 'timestamp': (2434.88, 2444.08)}
+{'text': ' living in L.A. there was a Chinese owned laundry in my neighborhood in Los Angeles.', 'timestamp': (2444.08, 2449.68)}
+{'text': ' Even as recently as around the 2000s,', 'timestamp': (2449.68, 2453.28)}
+{'text': ' when I was living in LA,', 'timestamp': (2453.28, 2454.7200000000003)}
+{'text': ' there was a Chinese owned laundry', 'timestamp': (2454.7200000000003, 2457.48)}
+{'text': ' in my neighborhood in Los Angeles.', 'timestamp': (2457.48, 2459.32)}
+{'text': ' And at that point was in,', 'timestamp': (2459.32, 2461.28)}
+{'text': " I don't know, was it the fourth generation, right?", 'timestamp': (2461.28, 2463.52)}
+{'text': ' It had been started a long time ago.', 'timestamp': (2463.52, 2466.6)}
+{'text': ' And then different generations of immigrants', 'timestamp': (2466.6, 2470.28)}
+{'text': ' had worked in that laundry and owned it within that same family.', 'timestamp': (2470.28, 2466.0)}
+{'text': ' So we see a stereotype is true for a certain amount of a group, but then people start', 'timestamp': (2466.0, 2472.0)}
+{'text': ' extrapolating and getting into areas of their imagination, which is not based on any', 'timestamp': (2472.0, 2479.0)}
+{'text': " supporting evidence, like the idea that Chinese are particularly good at doing laundry or maybe there's a particular Chinese", 'timestamp': (2479.0, 2487.92)}
+{'text': ' secret about doing laundry, right? Or some people think, wow, a lot of Vietnamese women', 'timestamp': (2487.92, 2494.56)}
+{'text': " they're just really good at doing nails, but actually what you see is people creatively and with a", 'timestamp': (2494.56, 2501.04)}
+{'text': ' lot of hard work finding a niche of the economy that they can use to support', 'timestamp': (2501.04, 2510.88)}
+{'text': ' themselves beyond for noirs and make a living for their families. Any questions or comments', 'timestamp': (2510.88, 2517.0)}
+{'text': ' or thoughts about any of that?', 'timestamp': (2517.0, 2520.0)}
+{'text': ' Okay, TAs, anybody want to add to, speak to', 'timestamp': (2520.0, 2528.0)}
