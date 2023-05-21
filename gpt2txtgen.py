@@ -47,18 +47,18 @@ def wizGenMessage():
     res = generate_text(messages)
     return res#[0]["generated_text"]#
 def mpt():
-    model_name = "OccamRazor/mpt-7b-storywriter-4bit-128g"
+    model_name = "mosaicml/mpt-7b-instruct"
     from transformers import AutoModelForCausalLM
 
     # model = AutoModelForCausalLM.from_pretrained("mosaicml/mpt-7b-instruct",trust_remote_code=True)
     config = transformers.AutoConfig.from_pretrained(
-        'OccamRazor/mpt-7b-storywriter-4bit-128g',
+        'mosaicml/mpt-7b-instruct',
         trust_remote_code=True
     )
     config.attn_config['attn_impl'] = 'triton'
 
     model = transformers.AutoModelForCausalLM.from_pretrained(
-        'OccamRazor/mpt-7b-storywriter-4bit-128g',
+        'mosaicml/mpt-7b-instruct',
         config=config,
         torch_dtype=torch.bfloat16,
         trust_remote_code=True
