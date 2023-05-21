@@ -39,8 +39,7 @@ def oldWay():
         # print(pipe(x.text)[0]["score"])
     print("The overall general sentiment is: ", overallSent(sentScore))
 # url = "https://twitter.com/"
-# url = "https://twitter.com/JamesGunn/status/1659988027329089537"
-url = "https://twitter.com/KamalaHarris/status/1658559607239766020"
+url = input("Enter in the full Twitter post link:")
 # reqs = requests.get(url)
 
 tweets = []
