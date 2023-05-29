@@ -1,0 +1,18 @@
+220 Volt: 0
+Bathroom Fan: 8
+Ceiling Fan: 9
+Ceiling Light: 45
+Duplex Outlet: 60
+GFCIOutlet: 99
+Smoke Detector: 14
+Switch: 127
+Wall Switched Outlet: 1
+WallLight: 0
+WaterProof GFCI: 6
+ress_can_light: 107
+Results saved to runs\detect\predict20
+
+Process finished with exit code 0
+
+Missed:
+L_im_67: switch

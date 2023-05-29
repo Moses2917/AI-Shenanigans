@@ -39,8 +39,9 @@ def idk():
     # Merge the outputs back into the original image shape
     merged_output = unpatchify(np.array(outputs), image.shape)
 
-
-model = YOLO("houseplan/elecStuffBigger17/weights/best.pt")
+trained = "houseplan/elecStuffBigger23/weights/best.pt"
+model = YOLO(trained)
+# model = YOLO("houseplan/Colab/50 epoch/best.pt")
 
 #YOLOv8 webcam
 def fun():
@@ -62,8 +63,8 @@ def fun():
 
 # limg = convert_from_path("M:/PyCharm/Project/valid.pdf", poppler_path ="M:/poppler", output_file="Limg.jpg",single_file=True)
 
-# split_image.split_image("valid.jpg",10,10,should_square=False, should_cleanup=False)
-idk = glob("valid" + "*.jpg") ## VIA "split_image(image,8,8,should_square=False, should_cleanup=False)"
+# split_image.split_image("Large_image.png",10,10,should_square=False, should_cleanup=False)
+idk = glob("Large_image" + "*.png") ## VIA "split_image(image,8,8,should_square=False, should_cleanup=False)"
 class_names = ['220 Volt', 'Bathroom Fan', 'Ceiling Fan', 'Ceiling Light', 'Duplex Outlet', 'GFCIOutlet',
                'Smoke Detector', 'Switch', 'Wall Switched Outlet', 'WallLight', 'WaterProof GFCI', 'ress_can_light']
 class_counter = []
@@ -88,3 +89,5 @@ for i in class_names:
             count = count + 1
     print(i + ": " + str(count)) # 220 Volt: 12
     count = 0 #resets count var
+
+# split_image.reverse_split("/runs/detect/predict21",10,10,should_cleanup=False)

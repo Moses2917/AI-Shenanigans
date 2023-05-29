@@ -60,7 +60,7 @@ def mpt():
     model = transformers.AutoModelForCausalLM.from_pretrained(
         'mosaicml/mpt-7b-instruct',
         config=config,
-        torch_dtype=torch.bfloat16,
+        torch_dtype=torch.float32,
         trust_remote_code=True
     )
     model.to(device='cuda:0')
