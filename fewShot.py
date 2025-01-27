@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 
 class SymbolDataset(Dataset):
-    def __init__(self, json_path, image_dir, image_size=224):
+    def __init__(self, json_path, image_dir, image_size=800):
         with open(json_path, 'r') as f:
             self.coco_data = json.load(f)
             
@@ -83,13 +83,13 @@ class SymbolDataset(Dataset):
     def __len__(self):
         return sum(len(imgs) for imgs in self.category_to_images.values())
 
-def get_dataloaders(json_path, image_dir, batch_size=32):
+def get_dataloaders(json_path, image_dir, batch_size=28):
     dataset = SymbolDataset(json_path, image_dir)
     loader = DataLoader(
         dataset,
         batch_size=batch_size,
         shuffle=True,
-        num_workers=4,
+        num_workers=2,
         pin_memory=True
     )
     return loader
@@ -98,7 +98,7 @@ def get_dataloaders(json_path, image_dir, batch_size=32):
 
 
 class PatchEmbedding(nn.Module):
-    def __init__(self, image_size=224, patch_size=16, in_channels=3, embed_dim=768):
+    def __init__(self, image_size=800, patch_size=32, in_channels=3, embed_dim=512):
         super().__init__()
         self.image_size = image_size
         self.patch_size = patch_size
@@ -156,7 +156,7 @@ class TransformerBlock(nn.Module):
         return x
 
 class SymbolEncoder(nn.Module):
-    def __init__(self, image_size=224, patch_size=16, in_channels=3, 
+    def __init__(self, image_size=800, patch_size=32, in_channels=3, 
                  embed_dim=768, depth=12, num_heads=12, mlp_ratio=4.0, 
                  dropout=0.1):
         super().__init__()
@@ -193,8 +193,8 @@ class SymbolMatcher(nn.Module):
     def __init__(self, encoder):
         super().__init__()
         self.encoder = encoder
-        # self.temperature = nn.Parameter(torch.ones([]) * 0.07)
-        self.temperature = 0.07  # Fixed temperature
+        self.temperature = nn.Parameter(torch.ones([]) * 0.07)
+        # self.temperature = 0.07  # Fixed temperature
     
     def forward(self, reference, candidates):
         ref_embedding = self.encoder(reference)  # (B, E)
@@ -231,7 +231,7 @@ class SymbolMatcher(nn.Module):
         
     #     return similarity
 
-def create_symbol_matcher(image_size=224, patch_size=16, in_channels=3,
+def create_symbol_matcher(image_size=800, patch_size=32, in_channels=3,
                          embed_dim=768, depth=12, num_heads=12):
     encoder = SymbolEncoder(
         image_size=image_size,
@@ -297,32 +297,53 @@ def inference(model, reference, candidates, threshold=0.5):
 def train_model(json_path=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\train\_annotations.coco.json",
                 image_dir=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\train",
                 output_dir=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco",
-                num_epochs=10, batch_size=28, learning_rate=1e-4, device='cuda'):
+                num_epochs=10, batch_size=28, learning_rate=1e-4, device='cuda', accumulation_steps=4):
     
-    model = create_symbol_matcher().to(device)
+    # model = create_symbol_matcher().to(device)
+    # 1. Create model with reduced size
+    model = create_symbol_matcher(
+        image_size=800,  # Reduced from 800
+        patch_size=32,
+        embed_dim=512,   # Reduced from 768
+        depth=6,         # Reduced from 12
+        num_heads=8      # Reduced from 12
+    ).to(device)
+    
+    scaler = GradScaler()
     optimizer = AdamW(model.parameters(), lr=learning_rate)
-    # scaler = GradScaler()
+    # train_loader = get_dataloaders(json_path, image_dir, batch_size)
     train_loader = get_dataloaders(json_path, image_dir, batch_size)
-    
-    
+
     best_loss = float('inf')
     
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0
         pbar = tqdm(train_loader, desc=f'Epoch {epoch+1}/{num_epochs}')
-        
+        optimizer.zero_grad()
+        scaler = GradScaler()
         for batch in pbar:
-            reference = batch['reference'].to(device)
-            candidates = batch['candidates'].reshape(-1, 3, 224, 224).to(device)
+            reference = batch['reference'].to(device, dtype=torch.bfloat16)
+            candidates = batch['candidates'].reshape(-1, 3, 800, 800).to(device, dtype=torch.bfloat16)
             positive_idx = batch['positive_idx'].to(device)
-            
+            optimizer.zero_grad()
+
             with autocast():
-                loss = train_step(model, optimizer, reference, candidates, positive_idx)
+                similarity = model(reference, candidates)
+                loss = ContrastiveLoss()(similarity, positive_idx)
+                loss = loss / accumulation_steps  # Scale loss
             
+            scaler.scale(loss).backward()
+            # scaler.step(optimizer)
+            # scaler.update()
+            if (batch + 1) % accumulation_steps == 0:
+                scaler.step(optimizer)
+                scaler.update()
+                optimizer.zero_grad()
             epoch_loss += loss
             pbar.set_postfix({'loss': f'{loss:.4f}'})
-            
+            if batch % 10 == 0:
+                torch.cuda.empty_cache()
         
         avg_epoch_loss = epoch_loss / len(train_loader)
         print(f'Epoch {epoch+1} average loss: {avg_epoch_loss:.4f}')
@@ -373,7 +394,7 @@ def run_inference(model_path, reference_image, candidate_images, device='cuda'):
 
 if __name__ == "__main__":
     # Train
-    # model = train_model()
+    model = train_model()
     reference_image = 'icon_switch.png'
     candidate_images = 'FlrPln.png'
     # Example inference
@@ -389,6 +410,7 @@ if __name__ == "__main__":
         # Image.open("path/to/candidate4.jpg")
     ]
     predictions, confidence = run_inference(model_path, reference_image, candidate_images)
+    img:Image = Image.open(r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\train\PC-set-E-shts-7-20-22-21-11-2-1_png.rf.45da7a961b4480a5e9259aac071a952b.jpg").convert('RGB'),
     
     # Interpret results
     for i, (pred, conf) in enumerate(zip(predictions.flatten(), confidence.flatten())):

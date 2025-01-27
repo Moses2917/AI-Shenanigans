@@ -67,7 +67,7 @@ trained = "houseplan/elecStuffBigger23/weights/best.pt"
 # model = YOLO(trained)
 model = YOLO(r"houseplan\elecStuffIndivImgs3\weights\best.pt") #Old Value: "houseplan/Colab/v21/best.pt"
 
-# limg = convert_from_path("M:/PyCharm/Project/valid.pdf", poppler_path ="M:/poppler", output_file="Limg.jpg",single_file=True)
+# limg = convert_from_path(r"M:\new downloads\Elec Plans\Pg2 Clean PC E shts 5-16-22 (21.23).pdf", poppler_path ="M:/poppler", output_file="Limg.jpg",single_file=True)
 
 # split_image.split_image("Large_image.png",10,10,should_square=False, should_cleanup=False) # to undo run split-image "Large_image.png" 10 10 -r
 split_image.split_image("656 Townsend.png",8,8,should_square=False, should_cleanup=False)

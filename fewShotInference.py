@@ -166,7 +166,9 @@ def visualize_detections(image_path, detections, output_path=None):
 if __name__ == "__main__":
     model_path = r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\best_model.pth"
     processor = FloorPlanProcessor(model_path)
-    
+    # from pdf2image import convert_from_path
+    # limg = convert_from_path(r"M:\new downloads\Elec Plans\Pg2 Clean PC E shts 5-16-22 (21.23).pdf", poppler_path ="M:\\poppler", output_file="SohmResidence.jpg",single_file=True)
+
     # Load reference symbols
     reference_symbols = [
         (Image.open("icon.png"), "ress_led_ceiling_light"),
@@ -176,14 +178,14 @@ if __name__ == "__main__":
     
     # Process floor plan
     detections = processor.process_floorplan(
-        "656 Townsend.png",
+        "SohmResidence.jpg",
         reference_symbols,
         confidence_threshold=0.7,
         nms_threshold=0.3
     )
     
     # Visualize results
-    visualize_detections("656 Townsend.png", detections, "output.png")
+    visualize_detections("SohmResidence.jpg", detections, "output.png")
     
     # Print results
     for symbol_name, box, conf in detections:
