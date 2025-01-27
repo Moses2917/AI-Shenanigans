@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 10
+names: ['Bathroom Fan', 'Ceiling LED', 'Duplex Outlet', 'Fan', 'GFCI Outlet', 'Recessed LED Ceiling', 'Switch', 'Telephone', 'Wall LED', 'Whole House Fan']
+
+roboflow:
+  workspace: movses-movsesyan-pnofn
+  project: zero-shot-elec-flow
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/movses-movsesyan-pnofn/zero-shot-elec-flow/dataset/5

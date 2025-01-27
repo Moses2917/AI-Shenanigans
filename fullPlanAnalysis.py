@@ -1,6 +1,12 @@
 # Import patchify library
 from glob import glob
-
+import reportlab
+from reportlab.platypus import SimpleDocTemplate, Paragraph
+report = SimpleDocTemplate("report.pdf")
+report_title = Paragraph("A Complete Inventory of My Fruit")
+from reportlab.graphics.shapes import Drawing
+from reportlab.graphics.charts.piecharts import Pie
+report_pie = Pie(width=3, height=3)
 import split_image
 from ultralytics import YOLO
 # Load an image as a numpy array
@@ -39,10 +45,6 @@ def idk():
     # Merge the outputs back into the original image shape
     merged_output = unpatchify(np.array(outputs), image.shape)
 
-trained = "houseplan/elecStuffBigger23/weights/best.pt"
-model = YOLO(trained)
-# model = YOLO("houseplan/Colab/50 epoch/best.pt")
-
 #YOLOv8 webcam
 def fun():
     # output = model.predict("M:/new downloads/plan ag..v3i.multiclass/test/large_image_png.rf.ca11051192b1dc365bbe89f274fecfed.jpg", save=True, box=True)
@@ -61,16 +63,21 @@ def fun():
     # print(output.scores)  # List of lists of confidence scores for each patch
     # print(output.boxes)  # List of lists of bounding boxes for each patch
 
+trained = "houseplan/elecStuffBigger23/weights/best.pt"
+# model = YOLO(trained)
+model = YOLO(r"houseplan\elecStuffIndivImgs3\weights\best.pt") #Old Value: "houseplan/Colab/v21/best.pt"
+
 # limg = convert_from_path("M:/PyCharm/Project/valid.pdf", poppler_path ="M:/poppler", output_file="Limg.jpg",single_file=True)
 
-# split_image.split_image("Large_image.png",10,10,should_square=False, should_cleanup=False)
-idk = glob("Large_image" + "*.png") ## VIA "split_image(image,8,8,should_square=False, should_cleanup=False)"
+# split_image.split_image("Large_image.png",10,10,should_square=False, should_cleanup=False) # to undo run split-image "Large_image.png" 10 10 -r
+split_image.split_image("656 Townsend.png",8,8,should_square=False, should_cleanup=False)
+Split_Images = glob("656 Townsend" + "*.png") ## VIA "split_image(image,8,8,should_square=False, should_cleanup=False)"
 class_names = ['220 Volt', 'Bathroom Fan', 'Ceiling Fan', 'Ceiling Light', 'Duplex Outlet', 'GFCIOutlet',
                'Smoke Detector', 'Switch', 'Wall Switched Outlet', 'WallLight', 'WaterProof GFCI', 'ress_can_light']
 class_counter = []
 classes = []
 
-for x in idk:
+for x in Split_Images:
     results = model(x,box=True,save=True)
     for result in results:
         boxes = result.boxes
@@ -90,4 +97,4 @@ for i in class_names:
     print(i + ": " + str(count)) # 220 Volt: 12
     count = 0 #resets count var
 
-# split_image.reverse_split("/runs/detect/predict21",10,10,should_cleanup=False)
+# split_image.reverse_split("/runs/detect/predict27",10,10,should_cleanup=False, image_path="/runs/detect/predict27/652 Townsend.png")

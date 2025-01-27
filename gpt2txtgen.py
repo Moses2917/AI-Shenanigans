@@ -70,22 +70,27 @@ def mpt():
     print(outputs.last_hidden_state)
     print(tokenizer.batch_decode(outputs, skip_special_tokens=True))
 
+def falco():
+    model = "tiiuae/falcon-7b"
 
-count = 0
-model_name = "mosaicml/mpt-7b-instruct"#"databricks/dolly-v2-3b"
-# generate_text = pipeline(model=model_name, torch_dtype=torch.bfloat16, trust_remote_code=True,device_map="auto")
-mpt()
-for x in range(int(time.time())): #int(time.time())
-    # message = wizGenMessage()
-    prompt = random.choice(messages)
-    prompt = "One positive thing you would tell them, make it very inspirational and wise?"
-    message = generate_text(prompt)[0]["generated_text"]
-    # print(prompt + ": " + message)
-    print(f"Prompt: {prompt} \nResponse Message: {message}".format(prompt,message))
-    # if count > 5:
-    #     time.sleep(120)
-    #     count = 0
-    # pyautogui.typewrite(message[:50],interval=0.009)
-    # pyautogui.press('enter')
-    # count += 1
-    # time.sleep(random.uniform(60,70))
+model = "tiiuae/falcon-7b"
+
+tokenizer = AutoTokenizer.from_pretrained(model)
+pipeline = transformers.pipeline(
+    "text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    torch_dtype=torch.bfloat16,
+    trust_remote_code=True,
+    device_map="auto",
+)
+sequences = pipeline(
+   "Girafatron is obsessed with giraffes, the most glorious animal on the face of this Earth. Giraftron believes all other animals are irrelevant when compared to the glorious majesty of the giraffe.\nDaniel: Hello, Girafatron!\nGirafatron:",
+    max_length=200,
+    do_sample=True,
+    top_k=10,
+    num_return_sequences=1,
+    eos_token_id=tokenizer.eos_token_id,
+)
+for seq in sequences:
+    print(f"Result: {seq['generated_text']}")+

@@ -1,0 +1,24 @@
+names:
+- 220 Volt
+- Bathroom Fan
+- Ceiling Fan
+- Ceiling Light
+- Duplex Outlet
+- GFCIOutlet
+- Smoke Detector
+- Switch
+- Wall Switched Outlet
+- WallLight
+- WaterProof GFCI
+- ress_can_light
+nc: 12
+roboflow:
+  license: CC BY 4.0
+  project: elec-stuff
+  url: https://universe.roboflow.com/movses-movsesyan-pnofn/elec-stuff/dataset/22
+  version: 22
+  workspace: movses-movsesyan-pnofn
+test: ../test/images
+train: train/images
+val: valid/images
+# val: elec-stuff-22/train/images
