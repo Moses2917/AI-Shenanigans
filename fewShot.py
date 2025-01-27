@@ -113,8 +113,9 @@ class PatchEmbedding(nn.Module):
         return x
 
 class MultiHeadAttention(nn.Module):
-    def __init__(self, embed_dim, num_heads):
+    def __init__(self, embed_dim, num_heads, dropout=0.1):
         super().__init__()
+        self.dropout = nn.Dropout(dropout)
         self.num_heads = num_heads
         self.head_dim = embed_dim // num_heads
         self.scale = self.head_dim ** -0.5
@@ -129,6 +130,7 @@ class MultiHeadAttention(nn.Module):
         
         dots = torch.matmul(q, k.transpose(-1, -2)) * self.scale
         attn = dots.softmax(dim=-1)
+        attn = self.dropout(dots.softmax(dim=-1))
         
         out = torch.matmul(attn, v)
         out = rearrange(out, 'b h n d -> b n (h d)')
@@ -191,36 +193,43 @@ class SymbolMatcher(nn.Module):
     def __init__(self, encoder):
         super().__init__()
         self.encoder = encoder
-        self.temperature = nn.Parameter(torch.ones([]) * 0.07)
+        # self.temperature = nn.Parameter(torch.ones([]) * 0.07)
+        self.temperature = 0.07  # Fixed temperature
+    
+    def forward(self, reference, candidates):
+        ref_embedding = self.encoder(reference)  # (B, E)
+        cand_embeddings = self.encoder(candidates)  # (B*4, E) or (N, E) for inference
         
+        # Handle different batch shapes for training vs inference
+        if reference.size(0) == 1:  # Inference mode
+            similarity = F.cosine_similarity(
+                ref_embedding.unsqueeze(0),  # (1, 1, E)
+                cand_embeddings.unsqueeze(0),  # (1, N, E)
+                dim=2
+            ) / self.temperature
+        else:  # Training mode
+            B = candidates.shape[0] // 4
+            cand_embeddings = cand_embeddings.view(B, 4, -1)  # Reshape to (B, 4, E)
+            similarity = F.cosine_similarity(
+                ref_embedding.unsqueeze(1),  # (B, 1, E)
+                cand_embeddings,  # (B, 4, E)
+                dim=2
+            ) / self.temperature
+        
+        return similarity
     # def forward(self, reference, candidates):
-    #     # Encode reference symbol
-    #     ref_embedding = self.encoder(reference)  # (1, E)
+    #     B = candidates.shape[0] // 4  # Divide by number of candidates per reference
+    #     ref_embedding = self.encoder(reference)  # (B, E)
+    #     cand_embeddings = self.encoder(candidates)  # (B*4, E)
+    #     cand_embeddings = cand_embeddings.view(B, 4, -1)  # Reshape to (B, 4, E)
         
-    #     # Encode all candidate regions
-    #     cand_embeddings = self.encoder(candidates)  # (B, E)
-        
-    #     # Compute similarity scores
     #     similarity = F.cosine_similarity(
-    #         ref_embedding.unsqueeze(0),  # (1, 1, E)
-    #         cand_embeddings.unsqueeze(1),  # (B, 1, E)
+    #         ref_embedding.unsqueeze(1),  # (B, 1, E)
+    #         cand_embeddings,  # (B, 4, E)
     #         dim=2
     #     ) / self.temperature
         
     #     return similarity
-    def forward(self, reference, candidates):
-        B = candidates.shape[0] // 4  # Divide by number of candidates per reference
-        ref_embedding = self.encoder(reference)  # (B, E)
-        cand_embeddings = self.encoder(candidates)  # (B*4, E)
-        cand_embeddings = cand_embeddings.view(B, 4, -1)  # Reshape to (B, 4, E)
-        
-        similarity = F.cosine_similarity(
-            ref_embedding.unsqueeze(1),  # (B, 1, E)
-            cand_embeddings,  # (B, 4, E)
-            dim=2
-        ) / self.temperature
-        
-        return similarity
 
 def create_symbol_matcher(image_size=224, patch_size=16, in_channels=3,
                          embed_dim=768, depth=12, num_heads=12):
@@ -234,14 +243,33 @@ def create_symbol_matcher(image_size=224, patch_size=16, in_channels=3,
     )
     return SymbolMatcher(encoder)
 
+class EarlyStopping:
+    def __init__(self, patience=7, min_delta=0):
+        self.patience = patience
+        self.min_delta = min_delta
+        self.counter = 0
+        self.best_loss = None
+        self.early_stop = False
+        
+
 # Training utilities
 class ContrastiveLoss(nn.Module):
-    def __init__(self):
+    def __init__(self, margin=0.5):
         super().__init__()
+        self.margin = margin
         
     def forward(self, similarity, positive_idx):
-        positive_idx = positive_idx.squeeze(-1)  # Fix here
-        return F.cross_entropy(similarity, positive_idx)
+        positive_idx = positive_idx.squeeze(-1)
+        loss = F.cross_entropy(similarity, positive_idx)
+        
+        # Add margin penalty
+        max_negative = torch.max(
+            similarity - torch.eye(similarity.size(0)).to(similarity.device) * 1e9,
+            dim=1
+        )[0]
+        margin_loss = F.relu(max_negative - similarity.diagonal() + self.margin)
+        
+        return loss + margin_loss.mean()
 
 def train_step(model, optimizer, reference, candidates, positive_idx):
     optimizer.zero_grad()
@@ -269,7 +297,7 @@ def inference(model, reference, candidates, threshold=0.5):
 def train_model(json_path=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\train\_annotations.coco.json",
                 image_dir=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\train",
                 output_dir=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco",
-                num_epochs=100, batch_size=28, learning_rate=1e-4, device='cuda'):
+                num_epochs=10, batch_size=28, learning_rate=1e-4, device='cuda'):
     
     model = create_symbol_matcher().to(device)
     optimizer = AdamW(model.parameters(), lr=learning_rate)
@@ -291,10 +319,6 @@ def train_model(json_path=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-
             
             with autocast():
                 loss = train_step(model, optimizer, reference, candidates, positive_idx)
-            
-            # scaler.scale(loss).backward()
-            # scaler.step(optimizer)
-            # scaler.update()
             
             epoch_loss += loss
             pbar.set_postfix({'loss': f'{loss:.4f}'})
@@ -329,7 +353,6 @@ def run_inference(model_path, reference_image, candidate_images, device='cuda'):
     checkpoint = torch.load(model_path)
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
-    
     # Prepare images
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
@@ -350,8 +373,23 @@ def run_inference(model_path, reference_image, candidate_images, device='cuda'):
 
 if __name__ == "__main__":
     # Train
-    model = train_model()
-    
+    # model = train_model()
+    reference_image = 'icon_switch.png'
+    candidate_images = 'FlrPln.png'
     # Example inference
     model_path = r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\best_model.pth"
-    # predictions, confidence = run_inference(model_path, reference_image, candidate_images)
+    from PIL import Image
+
+    # Load your images
+    reference_image = Image.open('icon_switch.png').convert('RGB')
+    candidate_images = [
+        Image.open(r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-objects.coco\train\PC-set-E-shts-7-20-22-21-11-2-1_png.rf.45da7a961b4480a5e9259aac071a952b.jpg").convert('RGB'),
+        # Image.open("path/to/candidate2.jpg"),
+        # Image.open("path/to/candidate3.jpg"),
+        # Image.open("path/to/candidate4.jpg")
+    ]
+    predictions, confidence = run_inference(model_path, reference_image, candidate_images)
+    
+    # Interpret results
+    for i, (pred, conf) in enumerate(zip(predictions.flatten(), confidence.flatten())):
+        print(f"Candidate {i}: Match={bool(pred)}, Confidence={float(conf):.2f}")
