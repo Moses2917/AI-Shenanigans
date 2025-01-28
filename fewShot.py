@@ -11,6 +11,7 @@ from PIL import Image
 from torch.cuda.amp import GradScaler, autocast
 from torch.optim import AdamW
 from torch.utils.data import DataLoader, Dataset
+import torch.utils.checkpoint as checkpoint
 from torchvision import transforms
 from tqdm import tqdm
 
@@ -37,20 +38,21 @@ class SymbolDataset(Dataset):
             
         self.transform = transforms.Compose([
             transforms.Resize((image_size, image_size)),
+            transforms.Grayscale(num_output_channels=1),  # Convert to grayscale
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                              std=[0.229, 0.224, 0.225])
+            transforms.Normalize(mean=[0.485], std=[0.229])  # Single channel normalization
         ])
 
     def load_image(self, image_id, bbox):
         image_info = next(img for img in self.images if img['id'] == image_id)
         image_path = os.path.join(self.image_dir, image_info['file_name'])
-        image = Image.open(image_path).convert('RGB')
+        image = Image.open(image_path)  # No need to convert to RGB
         
         # Crop to bbox
         x, y, w, h = [int(c) for c in bbox]
         image = image.crop((x, y, x+w, y+h))
         return self.transform(image)
+
 
     def __getitem__(self, idx):
         # Select random category
@@ -98,7 +100,7 @@ def get_dataloaders(json_path, image_dir, batch_size=28):
 
 
 class PatchEmbedding(nn.Module):
-    def __init__(self, image_size=800, patch_size=32, in_channels=3, embed_dim=512):
+    def __init__(self, image_size=800, patch_size=32, in_channels=1, embed_dim=512):
         super().__init__()
         self.image_size = image_size
         self.patch_size = patch_size
@@ -111,6 +113,7 @@ class PatchEmbedding(nn.Module):
         x = self.projection(x)  # (B, E, H', W')
         x = rearrange(x, 'b e h w -> b (h w) e')  # (B, N, E)
         return x
+
 
 class MultiHeadAttention(nn.Module):
     def __init__(self, embed_dim, num_heads, dropout=0.1):
@@ -156,9 +159,9 @@ class TransformerBlock(nn.Module):
         return x
 
 class SymbolEncoder(nn.Module):
-    def __init__(self, image_size=800, patch_size=32, in_channels=3, 
+    def __init__(self, image_size=800, patch_size=32, in_channels=1, 
                  embed_dim=768, depth=12, num_heads=12, mlp_ratio=4.0, 
-                 dropout=0.1):
+                 dropout=0.1, use_checkpoint=True):
         super().__init__()
         self.patch_embed = PatchEmbedding(image_size, patch_size, in_channels, embed_dim)
         self.cls_token = nn.Parameter(torch.randn(1, 1, embed_dim))
@@ -170,6 +173,7 @@ class SymbolEncoder(nn.Module):
         ])
         
         self.norm = nn.LayerNorm(embed_dim)
+        self.use_checkpoint = use_checkpoint
         
     def forward(self, x):
         B = x.shape[0]
@@ -182,9 +186,12 @@ class SymbolEncoder(nn.Module):
         # Add position embeddings
         x = x + self.pos_embed
         
-        # Apply transformer blocks
+        # Apply transformer blocks with checkpointing
         for block in self.blocks:
-            x = block(x)
+            if self.use_checkpoint and self.training:
+                x = checkpoint.checkpoint(block, x)
+            else:
+                x = block(x)
             
         x = self.norm(x)
         return x[:, 0]  # Return only the CLS token embedding
@@ -217,29 +224,18 @@ class SymbolMatcher(nn.Module):
             ) / self.temperature
         
         return similarity
-    # def forward(self, reference, candidates):
-    #     B = candidates.shape[0] // 4  # Divide by number of candidates per reference
-    #     ref_embedding = self.encoder(reference)  # (B, E)
-    #     cand_embeddings = self.encoder(candidates)  # (B*4, E)
-    #     cand_embeddings = cand_embeddings.view(B, 4, -1)  # Reshape to (B, 4, E)
-        
-    #     similarity = F.cosine_similarity(
-    #         ref_embedding.unsqueeze(1),  # (B, 1, E)
-    #         cand_embeddings,  # (B, 4, E)
-    #         dim=2
-    #     ) / self.temperature
-        
-    #     return similarity
 
-def create_symbol_matcher(image_size=800, patch_size=32, in_channels=3,
-                         embed_dim=768, depth=12, num_heads=12):
+def create_symbol_matcher(image_size=800, patch_size=32, in_channels=1,
+                         embed_dim=768, depth=12, num_heads=12, 
+                         use_checkpoint=True):
     encoder = SymbolEncoder(
         image_size=image_size,
         patch_size=patch_size,
         in_channels=in_channels,
         embed_dim=embed_dim,
         depth=depth,
-        num_heads=num_heads
+        num_heads=num_heads,
+        use_checkpoint=use_checkpoint
     )
     return SymbolMatcher(encoder)
 
@@ -302,6 +298,7 @@ def train_model(json_path=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-
     # model = create_symbol_matcher().to(device)
     # 1. Create model with reduced size
     model = create_symbol_matcher(
+        use_checkpoint=True,
         image_size=800,  # Reduced from 800
         patch_size=32,
         embed_dim=512,   # Reduced from 768
@@ -315,16 +312,16 @@ def train_model(json_path=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-
     train_loader = get_dataloaders(json_path, image_dir, batch_size)
 
     best_loss = float('inf')
-    
+    torch.cuda.synchronize(device)
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0
         pbar = tqdm(train_loader, desc=f'Epoch {epoch+1}/{num_epochs}')
         optimizer.zero_grad()
         scaler = GradScaler()
-        for batch in pbar:
+        for i, batch in enumerate(pbar):
             reference = batch['reference'].to(device, dtype=torch.bfloat16)
-            candidates = batch['candidates'].reshape(-1, 3, 800, 800).to(device, dtype=torch.bfloat16)
+            candidates = batch['candidates'].reshape(-1, 1, 800, 800).to(device, dtype=torch.bfloat16)
             positive_idx = batch['positive_idx'].to(device)
             optimizer.zero_grad()
 
@@ -336,13 +333,13 @@ def train_model(json_path=r"M:\new downloads\elec-stuff.v22-2025-01-25-isolated-
             scaler.scale(loss).backward()
             # scaler.step(optimizer)
             # scaler.update()
-            if (batch + 1) % accumulation_steps == 0:
+            if (i + 1) % accumulation_steps == 0:
                 scaler.step(optimizer)
                 scaler.update()
                 optimizer.zero_grad()
             epoch_loss += loss
             pbar.set_postfix({'loss': f'{loss:.4f}'})
-            if batch % 10 == 0:
+            if i % 10 == 0:
                 torch.cuda.empty_cache()
         
         avg_epoch_loss = epoch_loss / len(train_loader)
@@ -376,9 +373,10 @@ def run_inference(model_path, reference_image, candidate_images, device='cuda'):
     model.eval()
     # Prepare images
     transform = transforms.Compose([
-        transforms.Resize((224, 224)),
+        transforms.Resize((800, 800)),
+        transforms.Grayscale(num_output_channels=1),  # Convert to grayscale
         transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        transforms.Normalize(mean=[0.485], std=[0.229])  # Single channel normalization
     ])
     
     reference = transform(reference_image).unsqueeze(0).to(device)
